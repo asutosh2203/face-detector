@@ -1,9 +1,10 @@
-# IMPORTANT: Bug Fixes
+# Face Detector
+A simple face detector designed using JavaScript and face-api.js which is a wrapper around TensorFlow. This app detects human face and judges expressions on it. 
 
-## `navigator.getUserMedia`
 
-`navigator.getUserMedia` is now deprecated and is replaced by `navigator.mediaDevices.getUserMedia`. To fix this bug replace all versions of `navigator.getUserMedia` with `navigator.mediaDevices.getUserMedia`
+## How to Run
+Spin the index.html up in a live server in VSCode or any other IDE.
 
-## Low-end Devices Bug
+Just opening up the index.html will not work because the models are being fetched from a server. Spiniing it up in a server is mandatory. 
 
-The video eventListener for `play` fires up too early on low-end machines, before the video is fully loaded, which causes errors to pop up from the Face API and terminates the script (tested on Debian [Firefox] and Windows [Chrome, Firefox]). Replaced by `playing` event, which fires up when the media has enough data to start playing.
+Refer to - https://bit.ly/3j6ljzl
